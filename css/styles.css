@@ -8,11 +8,32 @@ body {
     background-color: #34495e;
 }
 
+.container__responsive {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+    .container__responsive {
+        
+    }
+}
+
+@media (min-width: 991px){
+    .container__responsive {
+        
+    }
+}
+
+/*Nav-bar*/
 .menu-navegador {
     display: flex;
     background-color: #22313f;
     justify-content: space-between;
-    text-align: right;
 }
 
 .menu-navegador a {
@@ -41,16 +62,17 @@ a:visited {
 
 .menu-navegador ul {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;    
+    margin-top: auto;
+    margin-bottom: auto;
     list-style-type: none;
     color: white;
-    border: 1px solid white;
+    max-width: 100%;
 }
 
 .menu-navegador ul li {
     display: flex;
     padding: 10px;
-    align-items: center;
     font-weight: bold;
 }
 
@@ -66,30 +88,47 @@ section p {
     color: white;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
+/*Responsive queries*/
+@media only screen and (max-width: 767px) {
+    .menu-navegador ul {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+        background-color: #22313f;
+    }
+    .menu-navegador {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .teclados {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .teclados__box
+}
+
+/*Index first slides*/
+
+.container__index {
+    padding: 20px;
+}
+
+.row {
+    max-width: fit-content;
     justify-content: center;
-    text-align: center;
+    color: black;
 }
 
-.slides {
+.col-sm-4 {
     background-color: #34495e;
-    display: inline-block;
-    width: 30%;
-    border: 2px solid black;
-    margin: 4px;
-    position: relative;
-}
-
-div img {
-    width: 570px;
-    height: 500px;
-    object-fit: cover;
+    border-style: 5px outset;
 }
 
 .smallbox {
-    background-color: black;
+    background-color: #844e89;
+    font-weight: bold;
     color: white;
     position: absolute;
     top: -9px;
@@ -163,12 +202,11 @@ h1 {
 
 .teclados {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2,3fr) ;
     text-align: center;
     margin: auto;
-    gap: 30px;
-    border: 2px solid white;
+    gap: 20px;
 }
 
 .teclados__box {
