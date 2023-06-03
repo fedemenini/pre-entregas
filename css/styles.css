@@ -13,22 +13,6 @@ body {
     text-align: center;
 }
 
-@media (max-width: 767px){
-    
-}
-
-@media (min-width: 768px) and (max-width: 990px){
-    .container__responsive {
-        
-    }
-}
-
-@media (min-width: 991px){
-    .container__responsive {
-        
-    }
-}
-
 /*Nav-bar*/
 .menu-navegador {
     display: flex;
@@ -62,7 +46,7 @@ a:visited {
 
 .menu-navegador ul {
     display: flex;
-    align-items: center;    
+    align-items: center;
     margin-top: auto;
     margin-bottom: auto;
     list-style-type: none;
@@ -88,7 +72,7 @@ section p {
     color: white;
 }
 
-/*Responsive queries*/
+/*Responsive queries navbar*/
 @media only screen and (max-width: 767px) {
     .menu-navegador ul {
         height: 230px;
@@ -96,20 +80,23 @@ section p {
         text-align: center;
         background-color: #22313f;
     }
+
     .menu-navegador {
         height: 230px;
         flex-direction: column;
         text-align: center;
     }
-    .teclados {
-        display: grid;
-        grid-template-columns:  1fr;
-        grid-template-rows: repeat(4,1fr);
-    }
-    .teclados__box
 }
 
-/*Index first slides*/
+@media screen and (min-width: 1024px){
+    .menu-navegador {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/*Index cards top*/
 
 .container__index {
     padding: 20px;
@@ -191,51 +178,50 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.subtitulo {
-    color: white;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: -10px;
-}
-
-.teclados {
+.productos-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2,3fr) ;
-    text-align: center;
-    margin: auto;
-    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: 25%;
+    padding: 20px;
 }
 
-.teclados__box {
-    border: 2px solid black;
-    display: flex;
-    width: 300px;
-    height: 150px;
-    justify-content: center;
-    margin: auto;
+.productos__item {
+    position: relative;
+    border: 5px solid red;
+    width: 400px;
+    height: 250px;
+}
+
+.productos__img {
+    width: 100%;
+    height: 80%;
     object-fit: cover;
 }
 
-.teclados__box img {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width:100%;
-    max-height: 150px;
-    object-fit: scale-down;
-    margin-left: auto;
-    margin-right: auto;
+.producto__title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
 }
 
-.imagen {
-    width: 18%;
-    object-fit: cover;
-    margin-left: auto;  
-    margin-right: auto;
-    padding-right: 130px;
+@media screen and (max-width: 767px) {
+    .productos-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .productos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 /*Quienes somos*/
@@ -259,7 +245,7 @@ h4 {
 .container__galeria {
     width: 100%;
     height: 300px;
-    background-color:#22313f;
+    background-color: #22313f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,31 +258,14 @@ h4 {
     font-size: 30px;
 }
 
-.hide{
+.hide {
     display: none;
 }
-.container__galeria:hover .hide{
+
+.container__galeria:hover .hide {
     display: block;
     color: grey;
     transition: 0.5s;
-}
-
-/*main img {
-    display: block;
-    width: 100%;
-    margin: auto;
-}
-
-/*main .who {
-    position: absolute;
-    top: 60px;
-    left: 800px;
-    padding: 60px;
-    margin-right: 30px;
-    color: white;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
 }
 
 /* Galeria*/
@@ -316,10 +285,10 @@ h2 {
 .carousel.slide {
     border: 3px solid #22313f;
     border-radius: 20px;
-    
+
 }
 
-.carousel-inner img{
+.carousel-inner img {
     object-fit: cover;
     height: 700px;
     justify-content: center;
