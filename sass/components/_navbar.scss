@@ -1,0 +1,47 @@
+/*Nav-bar*/
+.menu-navegador {
+    display: flex;
+    background-color: #22313f;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+
+        &:visited {
+            color: whitesmoke;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-left: 10px;
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        list-style-type: none;
+        color: white;
+        max-width: 100%;
+
+        li {
+            display: flex;
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+//MIXIN flex
+@mixin flexbox($direction,$justify,$wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+//MIXIN fonts
+@mixin fonts($size,$family,$weight) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+}

@@ -1,0 +1,53 @@
+/* Productos */
+h1 {
+    text-align: center;
+    @include fonts(40px, 'Roboto' sans-serif, bold);
+    color: white;
+}
+
+.header__shop {
+    text-align: center;
+    @include fonts(24px,'Roboto' sans-serif,bolder);
+    margin: auto;
+}
+
+.productos-container {
+    display: flex;
+    @include flexbox(row,center,wrap);
+    gap: 15px;
+    padding: 20px;
+}
+
+.productos__item {
+    position: relative;
+    border: 5px outset #22313f;
+    background-color: $main-color;
+    width: 400px;
+    height: 500px;
+
+    a {
+        color: white;
+        margin: auto 130px;
+        padding: 5px;
+    }
+}
+
+.productos__img {
+    width: 100%;
+    height: 70%;
+    object-fit: scale-down;
+}
+
+.producto__title {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin-top: -50px;
+    @include fonts(18px,'Roboto' sans-serif,bold);
+
+    &__description {
+        @include fonts(14px, 'Roboto' sans-serif, bold);
+        color: black;
+        text-align: center;
+    }
+}

@@ -1,0 +1,31 @@
+/* Galeria*/
+
+.title__subtitle {
+    text-align: center;
+    color: white;
+    @include fonts(18px, 'Roboto' sans-serif, normal);
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.carousel.slide {
+    border: 3px solid #22313f;
+    border-radius: 20px;
+
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 700px;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+.carousel-inner2 {
+    object-fit: cover;
+    height: 700px;
+    justify-content: center;
+    border-radius: 18px;
+}

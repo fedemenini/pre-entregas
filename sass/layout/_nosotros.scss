@@ -1,0 +1,43 @@
+/*Quienes somos*/
+h4 {
+    margin-left: auto;
+    margin-right: auto;
+    @include fonts(48px, 'Roboto' sans-serif, bold);
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+.container__galeria {
+    width: 100%;
+    height: 300px;
+    background-color: #22313f;
+    @include flexbox(row, center, wrap);
+    align-items: center;
+    color: white;
+    border: 6px outset white;
+    border-radius: 20px;
+
+    h3 {
+        font-size: 48px;
+    }
+}
+
+.hide {
+    display: none;
+    transition: $transition;
+
+}
+
+.container__galeria:hover .hide {
+    display: block;
+    color: grey;
+    transition: $transition;
+}

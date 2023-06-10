@@ -1,0 +1,43 @@
+/*Responsive queries navbar*/
+@media only screen and (max-width: 767px) {
+    .menu-navegador ul {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+        background-color: #22313f;
+    }
+
+    .menu-navegador {
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-navegador {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .productos-container {
+        display: flex;
+        @include flexbox(column,center,wrap);
+        object-fit: cover;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .productos-container {
+        display: flex;
+        @include flexbox(column,center,wrap);
+        object-fit: cover;
+
+    }
+}
