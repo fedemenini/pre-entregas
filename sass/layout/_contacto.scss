@@ -36,7 +36,9 @@ iframe {
 }
 
 footer .ubicacion {
-    @include fonts(18px, 'Roboto' sans-serif, bold);
+    font-size: 18px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
     text-align: left;
     padding-right: 15px;
     margin-left: 100px;
