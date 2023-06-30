@@ -140,14 +140,12 @@ section p {
 /*Responsive queries navbar*/
 @media only screen and (max-width: 767px) {
   .menu-navegador ul {
-    height: 230px;
     flex-direction: column;
     text-align: center;
     background-color: #22313f;
   }
 
   .menu-navegador {
-    height: 230px;
     flex-direction: column;
     text-align: center;
   }
