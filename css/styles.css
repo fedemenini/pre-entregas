@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
 /*
 font-family: 'Roboto', sans-serif;
 */
@@ -29,6 +30,7 @@ section p {
   background-color: #22313f;
   justify-content: space-between;
 }
+
 .menu-navegador a {
   text-decoration: none;
   font-size: 18px;
@@ -40,9 +42,11 @@ section p {
   font-weight: bold;
   color: white;
 }
+
 .menu-navegador a:visited {
   color: whitesmoke;
 }
+
 .menu-navegador a img {
   width: 50px;
   height: 50px;
@@ -50,6 +54,7 @@ section p {
   border-radius: 100%;
   margin-left: 10px;
 }
+
 .menu-navegador ul {
   display: flex;
   align-items: center;
@@ -59,6 +64,7 @@ section p {
   color: white;
   max-width: 100%;
 }
+
 .menu-navegador ul li {
   display: flex;
   padding: 10px;
@@ -139,18 +145,21 @@ section p {
     text-align: center;
     background-color: #22313f;
   }
+
   .menu-navegador {
     height: 230px;
     flex-direction: column;
     text-align: center;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .menu-navegador {
     display: flex;
     flex-direction: row;
   }
 }
+
 @media screen and (max-width: 767px) {
   .productos-container {
     display: flex;
@@ -161,6 +170,7 @@ section p {
     object-fit: cover;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .productos-container {
     display: flex;
@@ -171,6 +181,7 @@ section p {
     object-fit: cover;
   }
 }
+
 /* Productos */
 h1 {
   text-align: center;
@@ -205,6 +216,7 @@ h1 {
   width: 400px;
   height: 500px;
 }
+
 .productos__item a {
   color: white;
   margin: auto 130px;
@@ -226,6 +238,7 @@ h1 {
   font-family: "Roboto" sans-serif;
   font-weight: bold;
 }
+
 .producto__title__description {
   font-size: 14px;
   font-family: "Roboto" sans-serif;
@@ -377,8 +390,9 @@ footer iframe {
 }
 
 footer .signature {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
