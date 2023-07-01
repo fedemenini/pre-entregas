@@ -15,6 +15,7 @@ body {
 section h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
+  padding: 20px;
 }
 
 section p {
@@ -187,12 +188,12 @@ h1 {
   font-family: "Roboto" sans-serif;
   font-weight: bold;
   color: white;
+  padding: 20px;
 }
 
 .header__shop {
   text-align: center;
   font-size: 24px;
-  font-family: "Roboto" sans-serif;
   font-weight: bolder;
   margin: auto;
 }
@@ -212,13 +213,15 @@ h1 {
   border: 5px outset #22313f;
   background-color: #34495e;
   width: 400px;
-  height: 500px;
+  height: 600px;
 }
 
 .productos__item a {
   color: white;
-  margin: auto 130px;
+  margin: auto;
   padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .productos__img {
@@ -231,9 +234,10 @@ h1 {
   color: black;
   justify-content: center;
   text-align: center;
-  margin-top: -50px;
+  margin-top: -60px;
+  margin-bottom: -16px;
   font-size: 18px;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto";
   font-weight: bold;
 }
 
@@ -247,10 +251,10 @@ h1 {
 
 /*Quienes somos*/
 h4 {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  padding: 20px;
   font-size: 48px;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto";
   font-weight: bold;
   color: white;
   font-style: italic;
@@ -304,6 +308,8 @@ h4 {
 h2 {
   color: white;
   text-align: center;
+  margin: 15px;
+  padding: 20px;
 }
 
 .carousel.slide {
