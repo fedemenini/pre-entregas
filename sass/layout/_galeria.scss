@@ -3,7 +3,7 @@
 .title__subtitle {
     text-align: center;
     color: white;
-    @include fonts(18px, 'Roboto' sans-serif, normal);
+    @include fonts(18px, 'Roboto', normal);
 }
 h2 {
     color: white;

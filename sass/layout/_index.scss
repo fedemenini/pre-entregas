@@ -17,7 +17,7 @@
 
 .smallbox {
     background-color: #844e89;
-    @include fonts(18px, 'Roboto' sans-serif, bold);
+    @include fonts(18px, 'Roboto', bold);
     color: white;
     position: absolute;
     top: -9px;
